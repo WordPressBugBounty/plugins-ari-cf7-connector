@@ -3,8 +3,8 @@ Contributors: arisoft
 Donate link: http://www.ari-soft.com
 Tags: contact form 7, mailchimp, mailerlite, zapier, mail chimp
 Requires at least: 4.0
-Tested up to: 6.5.2
-Stable tag: 1.2.6
+Tested up to: 6.7.1
+Stable tag: 1.2.7
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -101,6 +101,9 @@ You can also [hire](mailto:info@ari-soft.com?subject=WordPress%20custom%20develo
 
 
 == Changelog ==
+
+= 1.2.7 =
+* Better PHP 8 support
 
 = 1.2.6 =
 * Better PHP 8 support

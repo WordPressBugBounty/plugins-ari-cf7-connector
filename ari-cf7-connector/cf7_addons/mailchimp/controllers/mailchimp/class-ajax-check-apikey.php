@@ -12,10 +12,9 @@ class Ajax_Check_Apikey extends Ajax_Delegate_Controller {
 
             'message' => '',
         );
-        $result = false;
 
         if ( $this->options->nopriv || ! check_ajax_referer( 'acf7c-ajax-action', ARICF7CONNECTOR_AJAX_NONCE_FIELD, false ) ) {
-            return $result;
+            return false;
         }
 
         $api_key = Request::get_var( 'api_key' );

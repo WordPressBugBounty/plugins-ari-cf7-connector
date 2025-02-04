@@ -4,6 +4,8 @@ namespace Ari_Cf7_Connector_Plugins\Mailchimp\Forms\Fields;
 use Ari_Cf7_Connector\Forms\Fields\Cloner as Cloner_Field;
 
 class Mailchimp_Subscription_List extends Cloner_Field {
+    public $tags;
+
     function __construct( $options = array() ) {
         parent::__construct( $options );
     }

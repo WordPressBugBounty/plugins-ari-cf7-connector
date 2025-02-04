@@ -4,6 +4,8 @@ namespace Ari_Cf7_Connector_Plugins\Mailerlite\Forms\Fields;
 use Ari_Cf7_Connector\Forms\Fields\Cloner as Cloner_Field;
 
 class Mailerlite_Subscription_List extends Cloner_Field {
+    public $tags;
+
     function __construct( $options = array() ) {
         parent::__construct( $options );
     }

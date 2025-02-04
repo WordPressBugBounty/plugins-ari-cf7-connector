@@ -11,6 +11,8 @@ class Form {
 
     protected $groups = array();
 
+    public $options;
+
     function __construct( $options = array() ) {
         $this->options = new Form_Options( $options );
 
@@ -152,7 +154,7 @@ class Form {
                     $field_id,
                     $field_label,
                     $field->output(),
-                    htmlspecialchars( $field_description, ENT_COMPAT, 'UTF-8' )
+                    htmlspecialchars( $field_description || '', ENT_COMPAT, 'UTF-8' )
                 );
             }
 
@@ -181,6 +183,8 @@ class Form {
     }
 
     public function render( $group = '', $options = array() ) {
+        // Render predefined form elements. No user input
+        // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
         echo $this->output( $group, $options );
     }
 }

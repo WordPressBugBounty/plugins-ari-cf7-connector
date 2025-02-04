@@ -22,6 +22,8 @@ abstract class Field {
 
     protected $postfix;
 
+    protected $options;
+
     function __construct( $options = array() ) {
         unset( $options['type'] );
 

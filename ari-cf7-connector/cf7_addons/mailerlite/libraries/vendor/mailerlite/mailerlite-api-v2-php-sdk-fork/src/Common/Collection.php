@@ -31,7 +31,7 @@ class Collection implements ArrayAccess, IteratorAggregate, Countable {
      *
      * @return \ArrayIterator
      */
-    public function getIterator()
+    public function getIterator(): \Traversable
     {
         return new ArrayIterator($this->items);
     }
@@ -43,7 +43,7 @@ class Collection implements ArrayAccess, IteratorAggregate, Countable {
      *
      * @return static
      */
-    public static function make($items)
+    public static function make($items): Collection
     {
         if (is_null($items)) {
             return new static;
@@ -71,7 +71,7 @@ class Collection implements ArrayAccess, IteratorAggregate, Countable {
      *
      * @return array
      */
-    public function toArray()
+    public function toArray(): array
     {
         return array_map(
             function ($value) {
@@ -86,7 +86,7 @@ class Collection implements ArrayAccess, IteratorAggregate, Countable {
      *
      * @return int
      */
-    public function count()
+    public function count(): int
     {
         return count($this->items);
     }
@@ -98,7 +98,7 @@ class Collection implements ArrayAccess, IteratorAggregate, Countable {
      *
      * @return bool
      */
-    public function offsetExists($key)
+    public function offsetExists($key): bool
     {
         return array_key_exists($key, $this->items);
     }

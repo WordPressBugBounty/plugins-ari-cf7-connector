@@ -3,7 +3,7 @@
 	Plugin Name: Contact Form 7 Connector
 	Plugin URI: https://wordpress.org/plugins/ari-cf7-connector/
 	Description: Integrate Contact Form 7 with popular email marketing and data services: MailChimp, MailerLite, Zapier.
-	Version: 1.2.6
+	Version: 1.2.7
 	Author: ARI Soft
 	Author URI: http://www.ari-soft.com
 	Text Domain: contact-form-7-connector

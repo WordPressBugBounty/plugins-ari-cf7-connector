@@ -5,6 +5,10 @@ use Ari\Forms\Fields\Text as Text;
 use Ari\Utils\Array_Helper as Array_Helper;
 
 class Cf7_Text extends Text {
+    public $tags;
+
+    public $supported_types;
+
     public function __set( $name, $value ) {
         switch ( $name ) {
             case 'supported_types':
@@ -27,13 +31,13 @@ class Cf7_Text extends Text {
         $tags = $this->tags;
         $supported_types = $this->supported_types;
 
-        if ( is_null( $supported_types ) || in_array( '*', $supported_types ) )
+        if ( is_null( $supported_types ) || ( is_array( $supported_types) && in_array( '*', $supported_types ) ) )
             return $tags;
 
         $filtered_tags = array();
 
         foreach ( $tags as $tag ) {
-            if ( ! in_array( $tag['basetype'], $supported_types ) )
+            if ( is_array( $supported_types ) && ! in_array( $tag['basetype'], $supported_types ) )
                 continue ;
 
             $filtered_tags[] = $tag;
