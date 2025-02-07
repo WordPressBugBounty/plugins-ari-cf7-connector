@@ -1,5 +1,5 @@
 <?php
-define( 'ARICF7CONNECTOR_VERSION', '1.2.7' );
+define( 'ARICF7CONNECTOR_VERSION', '1.2.8' );
 define( 'ARICF7CONNECTOR_SLUG', 'contact-form-7-connector' );
 define( 'ARICF7CONNECTOR_ASSETS_URL', ARICF7CONNECTOR_URL . 'assets/' );
 define( 'ARICF7CONNECTOR_VERSION_OPTION', 'ari_cf7connector' );

@@ -87,7 +87,7 @@ class Plugin extends Ari_Plugin {
 
         // Hidden pages
         add_submenu_page(
-            null,
+            '',
             '',
             '',
             $settings_cap,
