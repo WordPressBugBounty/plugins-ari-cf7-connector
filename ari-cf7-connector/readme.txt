@@ -3,7 +3,7 @@ Contributors: arisoft
 Donate link: http://www.ari-soft.com
 Tags: contact form 7, mailchimp, mailerlite, zapier, mail chimp
 Requires at least: 4.0
-Tested up to: 6.7.1
+Tested up to: 6.8.2
 Stable tag: 1.2.8
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
